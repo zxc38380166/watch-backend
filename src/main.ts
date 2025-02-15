@@ -12,6 +12,7 @@ async function bootstrap() {
     prefix: staticPath.assets,
   });
   await app.listen(process.env.PORT || 3000);
+  console.log(`Your local URL is http://localhost:${process.env.PORT || 3000}`);
 }
 
 bootstrap();

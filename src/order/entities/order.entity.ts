@@ -1,12 +1,12 @@
-import { Column, PrimaryGeneratedColumn, Entity } from "typeorm"
+import { Column, PrimaryGeneratedColumn, Entity } from 'typeorm';
 
 @Entity()
 export class Order {
   @PrimaryGeneratedColumn()
-  id: Number
+  id: number;
 
   @Column({ type: 'varchar', length: 55, default: ''})
-  orderNumber: string
+  orderNumber: string;
 
   @Column({ type: 'varchar', length: 55, default: ''})
   subTotal: string
